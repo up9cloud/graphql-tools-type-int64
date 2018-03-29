@@ -14,7 +14,7 @@ Int64 scalar type for [graphql-tools](https://github.com/apollographql/graphql-t
 ```js
 import { makeExecutableSchema } from 'graphql-tools'
 // import Int64 from 'graphql-tools-type-int64'
-import Int64 from 'graphqltoolstypeint64' // because of npm spam detection
+import Int64 from 'graphqltoolstypeint64' // naming: because of npm spam detection
 
 let typeDefs = [`
 scalar Int64
