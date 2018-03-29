@@ -13,7 +13,8 @@ Int64 scalar type for [graphql-tools](https://github.com/apollographql/graphql-t
 
 ```js
 import { makeExecutableSchema } from 'graphql-tools'
-import Int64 from 'graphql-tools-type-int64'
+// import Int64 from 'graphql-tools-type-int64'
+import Int64 from 'graphqltoolstypeint64' // because of npm spam detection
 
 let typeDefs = [`
 scalar Int64
@@ -30,17 +31,4 @@ let resolvers = {
 let schema = makeExecutableSchema({ typeDefs, resolvers })
 
 export default schema
-```
-
-## Minimum amount of module files
-
-```console
-$ tree ./node_modules/graphql-tools-type-int64
-./node_modules/graphql-tools-type-int64
-├── README.md
-├── dist
-│   └── index.js
-└── package.json
-
-1 directory, 3 files
 ```

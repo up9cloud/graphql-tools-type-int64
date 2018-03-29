@@ -1,6 +1,6 @@
 {
-  "name": "graphql-tools-type-int64",
-  "version": "1.0.0",
+  "name": "graphqltoolstypeint64",
+  "version": "1.0.1",
   "description": "Int64 scalar type for [graphql-tools](https://github.com/apollographql/graphql-tools)",
   "main": "dist/index.js",
   "directories": {
