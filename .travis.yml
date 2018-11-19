@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - node
+- 10
 - 8
 after_success:
 - npm run coverage
@@ -9,8 +10,8 @@ deploy:
   provider: npm
   email: "$NPM_EMAIL"
   api_key:
-    secure: dm4rNozfvXAWpDmVp+a+hMX2Qbwmxw/r5h5QntSdBZ6RldraxAcOVBvl0OQBmtQxdxOowTUrGKg2INZLV8o8UE9ax/i79DQljuVLjN0/PXOHACVwk7vR0VMvk4+UjGRr3UmhBW/iwK3+Wj7wzy55pw/V+kYfhsO0XMY5p75877dl5O8uuYbbrZWmnf8EOqFrZsSr2+EDAioquXqXZsYxR3p7NfYyQuKC8rGHKnQ80YwltnhSgS50atOC1gIcAEcXudpo33VtVVs6PobREsptSLCiytBEKlRv7fySeaNnDujhLkg7wNQ2ombqm8z3YxWSzjDoWHMkedMED4GCec4aYCvkOW/Jf67kNOxkwrJEUxXCviCmWYua8hvzZ/3dAe++TcAjzIZwP0lCZCjk8tVv4KLj2Rx6Mj9z+fSXXYd42Cq0Ti3C0b+9TuSXTQ3vG8ySmYlU1xCK1L8cEwd+6T3cGvGtNB8madS/SN0oc2zoJKfPAPhuuEWOkNOru+TSkhQy032hmoaenAudXyBKerU2n/NZFQKyOYzwu9Y4+3djzrJijyq7K59G08EPwFzvFZottctkCUSGn+p3D5ieLvhEnX/rv6N+WNRgl3oWIrSgW90iZUZw/rOtrkwl09/tFj9nGTWh7U/FrV1fDaBUsJfcLvEptr1BGv1dcMURWTU+IAQ=
-  skip_cleanup: true
+    secure: C/wl1HgWnujOsb75r6NnglvOcV6zY4JgKZ/O3ng2K7gq4nf/ewPQb/ulikzuNwqauXnh3s7ToGU/9vus1YS5NppBVR/TANui1wicMsE3HvJ08yyyL6TD4rPj7/fbre5Lt6OPr7YOs8plHvFvacnnqnFuJ9sBCLpDXv/9nqnNJv2i91mFGdvK4laTpIQyDRYPbnAKRUjNJ7Lgo8eu0KZccab6TMIYVNsTYrzcimviqrdUR7XrDoRNO8V96SGEp8ca+SGQBRB6KoTo5dW02hCmnDdVwyxFVush3d5xCL8nnQaaNw1dmj3wvJDd0JvXEKDHrFkhPg5YW2d75fPKlykjuieABk2XHxVdS78ssMXr6j2uj0D5m+Vf+F4t0Ye4bfPoN6QQuCRPhbu0l1zBL09kPTeEIdWJtkbMv60Txz9vOTy62ASS7ED7pzF9n8llCjwndA43cEnqIf49/mcR24qekPf6dncEKRHLdA5LcmHmVhr/H+9Ekt15OFUFRp8jUWhT/Gbc0v4DtYKYNY5GPJYH7ansF1I+QegVbfgOY0BSurML6bumW207nSFB6L4kuR6T4DTO3OSlNdHLPMQCbeN6ifh3mVdTrfZAlsmilFv9KZ78tmb/iyXhYxfU8/sDYFKDiWYIJPNsVAzIsFgD+m+vMONP7iCQ8Ap03GhPzZvpJjI=
   on:
+    tags: true
     repo: up9cloud/graphql-tools-type-int64
     branch: master
