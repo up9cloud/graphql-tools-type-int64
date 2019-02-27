@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- node
+- 10
+- 8
+after_success:
+- npm run coverage
+- npm run build
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key:
+    secure: C/wl1HgWnujOsb75r6NnglvOcV6zY4JgKZ/O3ng2K7gq4nf/ewPQb/ulikzuNwqauXnh3s7ToGU/9vus1YS5NppBVR/TANui1wicMsE3HvJ08yyyL6TD4rPj7/fbre5Lt6OPr7YOs8plHvFvacnnqnFuJ9sBCLpDXv/9nqnNJv2i91mFGdvK4laTpIQyDRYPbnAKRUjNJ7Lgo8eu0KZccab6TMIYVNsTYrzcimviqrdUR7XrDoRNO8V96SGEp8ca+SGQBRB6KoTo5dW02hCmnDdVwyxFVush3d5xCL8nnQaaNw1dmj3wvJDd0JvXEKDHrFkhPg5YW2d75fPKlykjuieABk2XHxVdS78ssMXr6j2uj0D5m+Vf+F4t0Ye4bfPoN6QQuCRPhbu0l1zBL09kPTeEIdWJtkbMv60Txz9vOTy62ASS7ED7pzF9n8llCjwndA43cEnqIf49/mcR24qekPf6dncEKRHLdA5LcmHmVhr/H+9Ekt15OFUFRp8jUWhT/Gbc0v4DtYKYNY5GPJYH7ansF1I+QegVbfgOY0BSurML6bumW207nSFB6L4kuR6T4DTO3OSlNdHLPMQCbeN6ifh3mVdTrfZAlsmilFv9KZ78tmb/iyXhYxfU8/sDYFKDiWYIJPNsVAzIsFgD+m+vMONP7iCQ8Ap03GhPzZvpJjI=
+  on:
+    tags: true
+    repo: up9cloud/graphql-tools-type-int64
+    branch: master
+  skip_cleanup: true
